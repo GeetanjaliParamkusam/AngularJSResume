@@ -1,0 +1,21 @@
+{
+  "name": "angular_app",
+  "description": "Simple app",
+  "main": "index.js",
+  "authors": [
+    "prakash <thotasuryaprakash246@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jayaram-heresy/angular_app",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.5.0"
+  }
+}

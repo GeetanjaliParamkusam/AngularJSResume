@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+	<head>
+		<title>AngularJS Resume</title>
+		<link href="/bower_components/bootswatch-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="/bower_components/bootswatch-dist/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+		<script src="/bower_components/angular/angular.min.js"></script>
+		<script src="/js/modules/app.js"></script>
+		<script src="/js/controllers/controller.js"></script>
+		<script src="/js/models/service.js"></script>
+	
+	</head>
+	<body>
+		<div ng-app="ngApp" ng-controller="ngController" >
+			<div class ="container">
+				<div class="jumbotron">					
+					<img class="img-circle pull-right" alt="PIC" title="PIC" width="200" height="200" src="https://avatars1.githubusercontent.com/u/16758755?v=3&s=460">
+  					<h1>{{obj.data.basics.name}}</h1>
+					<div>{{obj.data.basics.label}}</div>
+					<div class="glyphicon glyphicon-envelope">{{obj.data.basics.email}}</div>
+					<div class="glyphicon glyphicon-earphone">{{obj.data.basics.phone}}</div>	
+				</div>
+				<h4  class="well well-sm">Career Objective :</h4>			
+				<div>
+					{{obj.data.basics.summary}}
+				</div>
+				<h4 class="well well-sm">Education Qualifications :</h4>
+				<div>
+					<table class="table table-bordered">
+						<thead>
+							<tr ng-repeat="head in obj.data.education | limitTo:1">
+        							<th ng-repeat="(key, val) in head">{{key | uppercase}}</th>
+    							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="body in obj.data.education ">
+        							<td ng-repeat="(key, val) in body">{{val}}</td>
+    							</tr>
+						</tbody>		
+					</table>
+				</div>
+				<h4 class="well well-sm">Technical Skills : </h4>
+				<div  ng-repeat="p in obj.data.skills">
+					<span>{{p.name +" : "}}</span>
+					<span ng-repeat="q in p.keywords" class="label label-info">{{q}} </span>
+				</div>
+				<h4 class="well well-sm">Strengths : </h4>
+				<div>
+					<!--<span>
+						{{obj.data.strengths.name +" : " | uppercase}}
+					</span>-->
+					<ul>
+    						<li ng-repeat="m in obj.data.strengths.keywords">{{m}}</li>
+					</ul>	
+				</div>
+				<h4 class="well well-sm">Projects : </h4>
+				<div ng-repeat="g in obj.data.projects">
+					<p ng-repeat="(key, val) in g">{{key | uppercase}} : {{val}}</p>
+				</div>
+				<h4 class="well well-sm">Achievements : </h4>			
+				<div ng-repeat="l in obj.data.awards">
+					<ul>
+    						<li ng-repeat="(key, val) in l">{{val}} </li>
+					</ul>	
+				</div>
+				<h4 class="well well-sm">Languages known : </h4>			
+				<div ng-repeat="z in obj.data.volunteer">
+					<p ng-repeat="(key, val) in z">{{key | uppercase}} : {{val}}</p>
+				</div>
+				<!--<div ng-repeat="x in obj.data.languages">
+					<p ng-repeat="(key, val) in x">{{key | uppercase}} : {{val}}</p>	
+				</div>-->
+				<h4 class="well well-sm">Languages known : </h4>
+				<div>
+					<table>
+						<!--<thead>
+							<tr ng-repeat="head in obj.data.languages | limitTo:1">
+        							<th ng-repeat="(key, val) in head">{{key | uppercase}}</th>
+    							</tr>
+						</thead>-->
+						<tbody>
+							<tr ng-repeat="body in obj.data.languages">
+        							<td ng-repeat="(key, val) in body"><mark>{{key}} :</mark> <span class="badge">{{val}}</span></td>
+    							</tr>
+						</tbody>		
+					</table>
+				</div>
+				<h4 class="well well-sm" >Interests : </h4>
+				<div>
+					{{obj.data.interests.names}}
+				</div>
+				<h4 class="well well-sm">Address : </h4>
+				<div ng-repeat="x in obj.data.basics.location">
+					{{x}}
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

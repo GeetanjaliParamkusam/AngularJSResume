@@ -1,0 +1,141 @@
+{
+  "basics": {
+    "name": "Geetanjali Paramkusam",
+    "label": "Application Developer",
+    "email": "geet2anju@gmail.com",
+    "phone": "7893678438",
+    "summary": "Seeking for a position of Software Developer and enhance my professional skills in a reputed and esteemed organization by utilizing my interpersonal, analytical and technical skills in team that dynamically work towards the mission and vision of the organization.",
+    "location": {
+      "address": "S-2, II floor, Block-2, Sai Dhamam Residency",
+      "city": "Sai Colony, Beeramguda, Patancheru, Hyderabad",
+      "state": "Telangana",
+      "postalCode": "502319",
+      "countryCode": "India"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Paramkusam Geetanjali",
+        "url": "https://www.linkedin.com/in/geetanjali-paramkusam-b704678a?"
+      }
+    ]
+  },
+  "volunteer": [
+    {
+      "organization": "Srushti organisation",
+      "summary": "Its an NGO. Mostly cares about school children welfare."
+    }
+  ],
+  "education": [
+    {
+      "institution": "TRR College of Engineering",
+      "area": "Electronics & Communications of Engineering",
+      "studyType": "Bachelor of Technology",
+      "passedOutYear": "2014",
+      "gpa": "77.87"
+    },
+    {
+      "institution": "Narayana Junior College",
+      "area": "MPC",
+      "studyType": "Intermediate",
+      "passedOutYear": "2010",
+      "gpa": "89.5"
+    },
+    {
+      "institution": "Triveni Talent School",
+      "area": "",
+      "studyType": "SSC",
+      "passedOutYear": "2008",
+      "gpa": "83.5"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Won various quizzes and competition at school level."
+    },
+    {
+      "title": "Participated in college level fests and technical events."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "Master",
+      "keywords": [
+        "C",
+        "JAVA"
+      ]
+    },
+    {
+      "name": "Web Technologies ",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "Web Components",
+      "level": "Master",
+      "keywords": [
+        "Servlets",
+        "JSP"
+      ]
+    },
+    {
+      "name": "Database",
+      "level": "Master",
+      "keywords": [
+        "MySQL",
+        "Hibernate"
+      ]
+    },
+    {
+      "name": "Operating Systems",
+      "level": "Master",
+      "keywords": [
+        "Windows",
+        "Ubuntu"
+      ]
+    }
+  ],
+  "strengths": 
+    {
+      "name": "Strengths",
+      "keywords": [
+        "Dedication to work and enthusiastic to learn new technologies",
+	"Adaptability to changing environment",
+	"Quick grasping and learning abilities",
+	"Team facilitator with good Interpersonal skills"
+      ]
+    },
+  "projects": [
+    {
+      "Title": "HIGH PERFORMANCE HARDWARE IMPLEMENTATION OF AES USING MINIMAL RESOURCES",
+      "Description": "The Hardware Implementation of AES Using Minimal Resources in order to achieve higher speed and lesser area. The algorithms used in AES are so simple that they can be easily implemented using cheap processors and a minimum amount of memory with low RAM requirements which gives high security assurance and efficiency."
+    },
+    {
+      "Title": "WEB EXAM",
+      "Description": "Web Exam is the project that goes around the details of online exam.This is a quizzing website pulling question from question bank database. It also has a very useful set of administrator tools where in the admin can create new Exams, monitor students performance generate reports and update question bank database."
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Good"
+    },
+    {
+      "language": "Hindi",
+      "fluency": "Good"
+    },
+    {
+      "language": "Telugu",
+      "fluency": "Good"
+    }
+  ],
+  "interests": 
+    {
+        "names":"Gardening, Watching T.V, Playing Shuttle"
+    }
+}
